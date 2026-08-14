@@ -10,7 +10,7 @@
   });
   const numberedPages = (directory, count, pad = 2) => Array.from(
     { length: count },
-    (_, index) => `${directory}/page-${String(index + 1).padStart(pad, "0")}.jpg`,
+    (_, index) => `${directory}/page-${String(index + 1).padStart(pad, "0")}.avif`,
   );
   const numberedAlt = (label, count) => Array.from(
     { length: count },
@@ -26,7 +26,7 @@
       period: "2026.07 - 至今",
       stage: "已上线脱敏 Demo",
       role: "FDE 前沿部署工程师 / 核心项目成员",
-      posters: ["assets/projects/investment/poster-front.png", "assets/projects/investment/poster-back.png"],
+      posters: ["assets/projects/investment/poster-front.avif", "assets/projects/investment/poster-back.avif"],
       posterAlt: ["投资项目智能评审项目展示第 1 页", "投资项目智能评审项目展示第 2 页"],
       mediaTitle: "投资项目智能评审 / 项目展示",
       demo: "https://fde-demo.fineres.com:3000/",
@@ -41,7 +41,7 @@
       period: "2026 · 业务验证",
       stage: "已完成方案、交互原型与可运行 Demo",
       role: "功能设计 / Agent 分工 / 交互原型 / 视觉界面 / Demo 搭建与测试",
-      posters: ["assets/projects/presales/poster-front.png", "assets/projects/presales/poster-back.png"],
+      posters: ["assets/projects/presales/poster-front.avif", "assets/projects/presales/poster-back.avif"],
       posterAlt: ["方案内容营销 Agent 项目展示第 1 页", "方案内容营销 Agent 项目展示第 2 页"],
       mediaTitle: "方案内容营销 / 项目展示",
       demo: "https://fde-demo.fineres.com:3006/",
@@ -84,12 +84,12 @@
       stage: "论文已获《设计》杂志录用",
       role: "论文独立一作 / 医疗产品与体验研究",
       posters: [
-        "assets/projects/product-experience/airway/01.web.jpg",
-        "assets/projects/product-experience/airway/02.web.jpg",
-        "assets/projects/product-experience/airway/03.web.jpg",
-        "assets/projects/product-experience/airway/04.web.jpg",
-        "assets/projects/product-experience/airway/05.web.jpg",
-        "assets/projects/product-experience/airway/06.web.jpg",
+        "assets/projects/product-experience/airway/01.web.avif",
+        "assets/projects/product-experience/airway/02.web.avif",
+        "assets/projects/product-experience/airway/03.web.avif",
+        "assets/projects/product-experience/airway/04.web.avif",
+        "assets/projects/product-experience/airway/05.web.avif",
+        "assets/projects/product-experience/airway/06.web.avif",
       ],
       posterAlt: ["气道清除系统展示第 1 页", "气道清除系统展示第 2 页", "气道清除系统展示第 3 页", "气道清除系统展示第 4 页", "气道清除系统展示第 5 页", "气道清除系统展示第 6 页"],
       mediaTitle: "气道清除系统 / 项目展示",
@@ -105,12 +105,12 @@
       stage: "已完成项目设计与展示",
       role: "产品研究 / 体验设计 / 视觉表达",
       posters: [
-        "assets/projects/product-experience/reboo/01.web.jpg",
-        "assets/projects/product-experience/reboo/02.web.jpg",
-        "assets/projects/product-experience/reboo/03.web.jpg",
-        "assets/projects/product-experience/reboo/04.web.jpg",
-        "assets/projects/product-experience/reboo/05.web.jpg",
-        "assets/projects/product-experience/reboo/06.web.jpg",
+        "assets/projects/product-experience/reboo/01.web.avif",
+        "assets/projects/product-experience/reboo/02.web.avif",
+        "assets/projects/product-experience/reboo/03.web.avif",
+        "assets/projects/product-experience/reboo/04.web.avif",
+        "assets/projects/product-experience/reboo/05.web.avif",
+        "assets/projects/product-experience/reboo/06.web.avif",
       ],
       posterAlt: ["REBOO 健身展示第 1 页", "REBOO 健身展示第 2 页", "REBOO 健身展示第 3 页", "REBOO 健身展示第 4 页", "REBOO 健身展示第 5 页", "REBOO 健身展示第 6 页"],
       mediaTitle: "reboo 健身 / 项目展示",
@@ -126,12 +126,12 @@
       stage: "已完成服务方案与场景表达",
       role: "可持续研究 / 服务设计 / 交互体验",
       posters: [
-        "assets/projects/product-experience/grass-service/01.web.jpg",
-        "assets/projects/product-experience/grass-service/02.web.jpg",
-        "assets/projects/product-experience/grass-service/03.web.jpg",
-        "assets/projects/product-experience/grass-service/04.web.jpg",
-        "assets/projects/product-experience/grass-service/05.web.jpg",
-        "assets/projects/product-experience/grass-service/06.web.jpg",
+        "assets/projects/product-experience/grass-service/01.web.avif",
+        "assets/projects/product-experience/grass-service/02.web.avif",
+        "assets/projects/product-experience/grass-service/03.web.avif",
+        "assets/projects/product-experience/grass-service/04.web.avif",
+        "assets/projects/product-experience/grass-service/05.web.avif",
+        "assets/projects/product-experience/grass-service/06.web.avif",
       ],
       posterAlt: ["以草代珍可持续交互服务展示第 1 页", "以草代珍可持续交互服务展示第 2 页", "以草代珍可持续交互服务展示第 3 页", "以草代珍可持续交互服务展示第 4 页", "以草代珍可持续交互服务展示第 5 页", "以草代珍可持续交互服务展示第 6 页"],
       mediaTitle: "以草代珍可持续交互服务 / 项目展示",
@@ -147,16 +147,16 @@
       stage: "已完成产品方案与三维表达",
       role: "场景研究 / 产品定义 / 工业设计",
       posters: [
-        "assets/projects/product-experience/rescue-scissors/01.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/02.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/03.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/04.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/05.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/06.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/07.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/08.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/09.web.jpg",
-        "assets/projects/product-experience/rescue-scissors/10.web.jpg",
+        "assets/projects/product-experience/rescue-scissors/01.web.avif",
+        "assets/projects/product-experience/rescue-scissors/02.web.avif",
+        "assets/projects/product-experience/rescue-scissors/03.web.avif",
+        "assets/projects/product-experience/rescue-scissors/04.web.avif",
+        "assets/projects/product-experience/rescue-scissors/05.web.avif",
+        "assets/projects/product-experience/rescue-scissors/06.web.avif",
+        "assets/projects/product-experience/rescue-scissors/07.web.avif",
+        "assets/projects/product-experience/rescue-scissors/08.web.avif",
+        "assets/projects/product-experience/rescue-scissors/09.web.avif",
+        "assets/projects/product-experience/rescue-scissors/10.web.avif",
       ],
       posterAlt: ["动物救援剪刀展示第 1 页", "动物救援剪刀展示第 2 页", "动物救援剪刀展示第 3 页", "动物救援剪刀展示第 4 页", "动物救援剪刀展示第 5 页", "动物救援剪刀展示第 6 页", "动物救援剪刀展示第 7 页", "动物救援剪刀展示第 8 页", "动物救援剪刀展示第 9 页", "动物救援剪刀展示第 10 页"],
       mediaTitle: "动物救援剪刀设计 / 项目展示",
@@ -172,14 +172,14 @@
       stage: "已完成产品方案与三维表达",
       role: "用户研究 / 产品定义 / 工业设计",
       posters: [
-        "assets/projects/product-experience/safety-helmet/01.web.jpg",
-        "assets/projects/product-experience/safety-helmet/02.web.jpg",
-        "assets/projects/product-experience/safety-helmet/03.web.jpg",
-        "assets/projects/product-experience/safety-helmet/04.web.jpg",
-        "assets/projects/product-experience/safety-helmet/05.web.jpg",
-        "assets/projects/product-experience/safety-helmet/06.web.jpg",
-        "assets/projects/product-experience/safety-helmet/07.web.jpg",
-        "assets/projects/product-experience/safety-helmet/08.web.jpg",
+        "assets/projects/product-experience/safety-helmet/01.web.avif",
+        "assets/projects/product-experience/safety-helmet/02.web.avif",
+        "assets/projects/product-experience/safety-helmet/03.web.avif",
+        "assets/projects/product-experience/safety-helmet/04.web.avif",
+        "assets/projects/product-experience/safety-helmet/05.web.avif",
+        "assets/projects/product-experience/safety-helmet/06.web.avif",
+        "assets/projects/product-experience/safety-helmet/07.web.avif",
+        "assets/projects/product-experience/safety-helmet/08.web.avif",
       ],
       posterAlt: ["地铁接触网工防护头盔展示第 1 页", "地铁接触网工防护头盔展示第 2 页", "地铁接触网工防护头盔展示第 3 页", "地铁接触网工防护头盔展示第 4 页", "地铁接触网工防护头盔展示第 5 页", "地铁接触网工防护头盔展示第 6 页", "地铁接触网工防护头盔展示第 7 页", "地铁接触网工防护头盔展示第 8 页"],
       mediaTitle: "地铁接触网工防护头盔 / 项目展示",
@@ -236,10 +236,10 @@
       stage: "已正式发布并投入录取使用",
       role: "团队设计成员 / 视觉系统与版式设计",
       posters: [
-        "assets/projects/admission/01-luojia-four-seasons.png",
-        "assets/projects/admission/02-product-photo.jpg",
-        "assets/projects/admission/03-notice-front.jpg",
-        "assets/projects/admission/04-notice-back.jpg",
+        "assets/projects/admission/01-luojia-four-seasons.avif",
+        "assets/projects/admission/02-product-photo.avif",
+        "assets/projects/admission/03-notice-front.avif",
+        "assets/projects/admission/04-notice-back.avif",
       ],
       posterAlt: [
         "武汉大学研究生录取通知书珞珈四时设计页",
@@ -260,10 +260,10 @@
       stage: "已完成系列视觉与文创礼盒设计",
       role: "视觉设计 / 插画表达 / 包装设计",
       posters: [
-        "assets/projects/luojia-packaging/01-gift-set.jpg",
-        "assets/projects/luojia-packaging/02-product-poster.png",
-        "assets/projects/luojia-packaging/03-detail-photo.jpg",
-        "assets/projects/luojia-packaging/04-sales-poster.jpg",
+        "assets/projects/luojia-packaging/01-gift-set.avif",
+        "assets/projects/luojia-packaging/02-product-poster.avif",
+        "assets/projects/luojia-packaging/03-detail-photo.avif",
+        "assets/projects/luojia-packaging/04-sales-poster.avif",
       ],
       posterAlt: [
         "珞珈十三景文创礼盒全套展示",
@@ -338,6 +338,8 @@
     const posterCanvas = document.querySelector("#detail-poster-canvas");
     const posterStage = document.querySelector("#case-poster-stage");
     const posterPage = document.querySelector("#detail-poster-page");
+    const mediaStatus = document.querySelector("#detail-media-status");
+    const mediaStatusText = mediaStatus.querySelector("p");
     const mediaEmpty = document.querySelector("#detail-media-empty");
     const viewerTools = document.querySelector(".case-viewer-tools");
     const previousPage = document.querySelector("#detail-page-prev");
@@ -350,6 +352,8 @@
     const mediaSets = Array.isArray(data.mediaSets) ? data.mediaSets : [];
     let activeMediaSet = 0;
     let activeMedia = 0;
+    let requestedMedia = 0;
+    let galleryViewer;
     let zoom = defaultZoom;
     let mediaSources = mediaSets.length
       ? mediaSets[0].sources
@@ -383,38 +387,81 @@
       applyZoom();
     };
 
+    const loadMedia = (source) => {
+      if (/\.pdf(?:$|[?#])/i.test(source)) return Promise.resolve();
+      return new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = resolve;
+        image.onerror = reject;
+        image.src = source;
+      });
+    };
+
+    const preloadMedia = (source) => {
+      if (/\.pdf(?:$|[?#])/i.test(source)) return;
+      const image = new Image();
+      image.src = source;
+    };
+
+    const renderMedia = ({ status, displayedIndex, requestedIndex, source }) => {
+      requestedMedia = requestedIndex;
+      if (status === "loading") {
+        mediaStatus.hidden = false;
+        mediaStatus.classList.remove("is-error");
+        mediaStatusText.textContent = `正在加载第 ${requestedIndex + 1} 页…`;
+        posterStage.classList.remove("is-ready");
+        return;
+      }
+      if (status === "error") {
+        mediaStatus.hidden = false;
+        mediaStatus.classList.add("is-error");
+        mediaStatusText.textContent = `第 ${requestedIndex + 1} 页加载失败，请重试`;
+        return;
+      }
+      activeMedia = displayedIndex;
+      const isPdf = /\.pdf(?:$|[?#])/i.test(source);
+      poster.hidden = isPdf;
+      pdfFrame.hidden = !isPdf;
+      if (isPdf) {
+        pdfFrame.src = `${source}#page=1&view=FitH`;
+      } else {
+        poster.src = source;
+        poster.alt = mediaAlt[activeMedia] || `${data.title} 项目页面 ${activeMedia + 1}`;
+      }
+      posterPage.textContent = `${String(activeMedia + 1).padStart(2, "0")} / ${String(mediaSources.length).padStart(2, "0")}`;
+      previousPage.disabled = mediaSources.length < 2;
+      nextPage.disabled = mediaSources.length < 2;
+      posterStage.scrollTop = 0;
+      posterStage.scrollLeft = 0;
+      mediaStatus.hidden = true;
+      mediaStatus.classList.remove("is-error");
+      posterStage.classList.remove("is-ready");
+      window.requestAnimationFrame(() => posterStage.classList.add("is-ready"));
+    };
+
+    const createMediaViewer = () => {
+      galleryViewer = window.OliaGallery.createGalleryViewer({
+        sources: mediaSources,
+        loadImage: loadMedia,
+        preloadImage: preloadMedia,
+        render: renderMedia,
+      });
+    };
+
     const setMedia = (index) => {
       if (!mediaSources.length) return;
-      activeMedia = (index + mediaSources.length) % mediaSources.length;
-      posterStage.classList.add("is-changing");
-      window.setTimeout(() => {
-        const source = mediaSources[activeMedia];
-        const isPdf = /\.pdf(?:$|[?#])/i.test(source);
-        poster.hidden = isPdf;
-        pdfFrame.hidden = !isPdf;
-        if (isPdf) {
-          pdfFrame.src = `${source}#page=1&view=FitH`;
-        } else {
-          poster.src = source;
-          poster.alt = mediaAlt[activeMedia] || `${data.title} 项目页面 ${activeMedia + 1}`;
-        }
-        posterPage.textContent = `${String(activeMedia + 1).padStart(2, "0")} / ${String(mediaSources.length).padStart(2, "0")}`;
-        previousPage.disabled = mediaSources.length < 2;
-        nextPage.disabled = mediaSources.length < 2;
-        posterStage.scrollTop = 0;
-        posterStage.scrollLeft = 0;
-        posterStage.classList.remove("is-changing");
-      }, 110);
+      galleryViewer.goTo(index);
     };
     if (mediaSources.length) {
-      previousPage.addEventListener("click", () => setMedia(activeMedia - 1));
-      nextPage.addEventListener("click", () => setMedia(activeMedia + 1));
+      createMediaViewer();
+      previousPage.addEventListener("click", () => setMedia(requestedMedia - 1));
+      nextPage.addEventListener("click", () => setMedia(requestedMedia + 1));
       zoomOut.addEventListener("click", () => setZoom(zoom - .1));
       zoomIn.addEventListener("click", () => setZoom(zoom + .1));
       zoomReset.addEventListener("click", () => setZoom(defaultZoom));
       posterStage.addEventListener("keydown", (event) => {
-        if (event.key === "ArrowLeft") setMedia(activeMedia - 1);
-        if (event.key === "ArrowRight") setMedia(activeMedia + 1);
+        if (event.key === "ArrowLeft") setMedia(requestedMedia - 1);
+        if (event.key === "ArrowRight") setMedia(requestedMedia + 1);
         if (["+", "="].includes(event.key)) setZoom(zoom + .1);
         if (event.key === "-") setZoom(zoom - .1);
         if (event.key === "0") setZoom(defaultZoom);
@@ -438,6 +485,7 @@
           mediaSources = set.sources;
           mediaAlt = set.alt;
           activeMedia = 0;
+          requestedMedia = 0;
           zoom = defaultZoom;
           document.querySelector("#detail-media-title").textContent = set.title;
           mediaSwitch.querySelectorAll("button").forEach((item, itemIndex) => {
@@ -446,6 +494,7 @@
             item.setAttribute("aria-pressed", isActive ? "true" : "false");
           });
           applyZoom();
+          createMediaViewer();
           setMedia(0);
         });
         mediaSwitch.appendChild(button);

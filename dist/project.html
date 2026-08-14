@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>项目案例 | Olia.Shuyu</title>
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="styles.css?v=20260814-2" />
+    <link rel="stylesheet" href="styles.css?v=20260814-3" />
   </head>
   <body class="detail-body case-body">
     <main class="case-shell">
@@ -76,6 +76,10 @@
           </div>
         </div>
         <div class="case-poster-stage" id="case-poster-stage" tabindex="0" aria-label="项目页面查看器">
+          <div class="case-media-status" id="detail-media-status" role="status" aria-live="polite" hidden>
+            <span class="case-media-spinner" aria-hidden="true"></span>
+            <p>图片加载中…</p>
+          </div>
           <div class="case-poster-canvas" id="detail-poster-canvas">
             <img id="detail-poster" src="" alt="" />
             <iframe id="detail-pdf" title="项目 PDF 页面" hidden></iframe>
@@ -109,7 +113,8 @@
         </div>
       </div>
     </aside>
-    <script src="detail.js"></script>
+    <script src="gallery-viewer.js?v=20260814-3"></script>
+    <script src="detail.js?v=20260814-3"></script>
     <script src="app.js?v=20260814-2"></script>
   </body>
 </html>
