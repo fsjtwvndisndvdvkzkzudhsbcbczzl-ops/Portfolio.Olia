@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>内容索引 | Olia.Shuyu</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css?v=20260814-2" />
+  </head>
+  <body class="detail-body">
+    <main class="detail-shell">
+      <header class="topbar detail-topbar">
+        <a class="identity" href="index.html" aria-label="Olia.Shuyu 首页">
+          <span class="identity-mark">O</span>
+          <span>OLIA.SHUYU</span>
+          <small>AI PRODUCT / FDE / EXPERIENCE DESIGN</small>
+        </a>
+        <nav class="topnav" aria-label="作品集导航">
+          <a data-nav-section="home" href="./index.html">首页</a>
+          <a data-nav-section="projects" href="./explore.html?section=projects">项目</a>
+          <a data-nav-section="internships" href="./explore.html?section=internships">实习</a>
+          <a data-nav-section="competitions" href="./explore.html?section=competitions">竞赛</a>
+          <a data-nav-section="experience" href="./explore.html?section=experience">实践</a>
+          <a data-nav-section="about" href="./explore.html?section=about">关于我</a>
+        </nav>
+        <button class="assistant-entry js-ai-open" type="button" data-context="projects">
+          <span>AI 作品集助手</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+      </header>
+      <section class="detail-hero">
+        <p>内容索引</p>
+        <h1 id="explore-title">项目全景</h1>
+        <p id="explore-summary">浏览项目、经历与能力记录。</p>
+        <div class="project-focus" id="project-focus" hidden aria-live="polite">
+          <p class="project-focus-meta" id="project-focus-meta"></p>
+          <h2 id="project-focus-title"></h2>
+          <p class="project-focus-summary" id="project-focus-summary"></p>
+          <div class="project-focus-facts">
+            <p><span>项目周期</span><strong id="project-focus-period"></strong></p>
+            <p><span>我的参与</span><strong id="project-focus-role"></strong></p>
+          </div>
+        </div>
+      </section>
+      <nav class="project-filters" id="project-filters" aria-label="项目分类" hidden>
+        <button class="project-filter is-active" type="button" data-project-filter="ai" aria-pressed="true">
+          <span>01</span><strong>AI 产品</strong><small>AI SYSTEMS</small>
+        </button>
+        <button class="project-filter" type="button" data-project-filter="product" aria-pressed="false">
+          <span>02</span><strong>产品体验</strong><small>PRODUCT &amp; UX</small>
+        </button>
+        <button class="project-filter" type="button" data-project-filter="culture" aria-pressed="false">
+          <span>03</span><strong>文化视觉</strong><small>CULTURE &amp; VISUAL</small>
+        </button>
+        <button class="project-filter" type="button" data-project-filter="hai" aria-pressed="false">
+          <span>04</span><strong>人智交互</strong><small>HUMAN-AI INTERACTION</small>
+        </button>
+        <span class="project-filter-indicator" aria-hidden="true"></span>
+      </nav>
+      <nav class="experience-tabs" id="experience-tabs" aria-label="学生工作与荣誉切换" hidden>
+        <button class="is-active" type="button" data-experience-view="work" aria-pressed="true">学生工作与公共实践</button>
+        <button type="button" data-experience-view="honors" aria-pressed="false">奖学金与荣誉</button>
+      </nav>
+      <section class="explore-list" id="explore-list"></section>
+    </main>
+
+    <aside class="ai-panel" aria-hidden="true" aria-labelledby="ai-panel-title">
+      <button class="ai-backdrop js-ai-close" type="button" aria-label="关闭 AI 面板"></button>
+      <div class="ai-sheet" role="dialog" aria-modal="true">
+        <div class="ai-sheet-header">
+          <div><span class="ai-mark">AI</span><p id="ai-panel-title">关于当前内容</p></div>
+          <button class="ai-close js-ai-close" type="button">关闭</button>
+        </div>
+        <div class="ai-context">
+          <p>你正在查看</p>
+          <h2 id="ai-context-title">项目内容</h2>
+          <p id="ai-context-summary">了解项目、方法与能力证据。</p>
+        </div>
+        <div class="ai-chat-log" id="ai-chat-log" aria-live="polite" hidden></div>
+        <div class="ai-composer">
+          <div class="ai-followups-host" id="ai-followups-host" aria-live="polite" hidden></div>
+          <form class="ai-form" id="ai-form">
+            <div><input id="ai-input" type="text" placeholder="输入你的问题" aria-label="输入你的问题" /><button type="submit">发送</button></div>
+          </form>
+        </div>
+      </div>
+    </aside>
+    <script src="detail.js"></script>
+    <script src="app.js?v=20260814-2"></script>
+  </body>
+</html>

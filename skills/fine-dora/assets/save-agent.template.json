@@ -1,0 +1,25 @@
+{
+  "id": "agent-id",
+  "name": "Sales Analysis Agent",
+  "description": "Analyze sales trends and attribution.",
+  "welcomeMessage": "Hello, I can help analyze sales data.",
+  "systemPrompt": "You are a Dora sales analysis agent.",
+  "skillConfigs": [
+    {
+      "id": "skill-template-data-query",
+      "name": "Data Query Skill",
+      "description": "Analyze revenue and attribution data.",
+      "skillType": "GENERAL",
+      "skillScenario": "DATA_QUERY"
+    }
+  ],
+  "datasourceIds": [
+    "datasource-1"
+  ],
+  "knowledgeSpaceIds": [
+    "knowledge-space-1"
+  ],
+  "llmConfigId": "llm-config-1",
+  "publishToWorkspace": true,
+  "publishToStandaloneUrl": false
+}

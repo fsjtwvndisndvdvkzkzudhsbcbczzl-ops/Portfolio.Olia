@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>投资项目智能评审｜A4 双面产品物料</title>
+  <style>
+    :root{
+      --ink:#10233f;--navy:#071a35;--blue:#1769ff;--cyan:#27b3ff;
+      --violet:#7656ff;--teal:#0aa6a0;--orange:#f08a3c;--red:#e95757;
+      --muted:#607089;--line:#dbe5f2;--mist:#f3f7fc;--paper:#fff;
+    }
+    *{box-sizing:border-box}html,body{margin:0;background:#e8edf4;color:var(--ink);font-family:Inter,"PingFang SC","Microsoft YaHei",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    body{padding:18px}.sheet{position:relative;width:210mm;height:297mm;margin:0 auto 18px;background:#fff url("backgrounds/a4-blue-bottom-gradient-natural-2480x3508.png") center/100% 100% no-repeat;overflow:hidden;box-shadow:0 16px 50px #203b5c26;padding:12mm 15mm 10mm;page-break-after:always}
+    .sheet:last-child{page-break-after:auto}.sheet:before{content:"";position:absolute;inset:0 0 auto;height:4mm;background:linear-gradient(90deg,var(--blue),var(--cyan) 58%,var(--violet))}
+    .page-no{position:absolute;right:15mm;bottom:5mm;font-size:8px;color:#9aa8b9;letter-spacing:.12em}.topbar{height:9mm;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:8px;font-size:9px;font-weight:700;letter-spacing:.11em;color:var(--blue)}.fanruan-logo{width:22mm;height:auto;object-fit:contain}
+    .brand i{width:18px;height:18px;border-radius:5px;display:inline-grid;place-items:center;background:var(--navy);color:#fff;font-style:normal;font-size:10px}.kicker{font-size:9px;color:var(--blue);font-weight:750;letter-spacing:.16em;text-transform:uppercase}.rule{height:1px;background:var(--line)}
+    h1,h2,h3,p{margin:0}.front-head{margin-top:7mm;display:grid;grid-template-columns:1.22fr .78fr;gap:6mm;align-items:center}.hero-copy{position:relative;padding-left:7mm}.hero-copy:before{content:"";position:absolute;left:0;top:0;width:3.2mm;height:29mm;border-radius:.8mm;background:linear-gradient(180deg,#1769ff,#7656ff);box-shadow:0 5px 16px #1769ff30}.front h1{font-size:30px;line-height:1.18;letter-spacing:-.05em;font-weight:760}.front h1 em{font-style:normal;color:var(--blue);background:linear-gradient(90deg,#1769ff,#7656ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .lead{margin-top:5mm;max-width:118mm;font-size:11px;line-height:1.72;color:var(--muted)}.lead strong{color:var(--ink)}.hero-visual{position:relative;width:67mm;height:45mm;justify-self:end}.concept-orbit{position:absolute;z-index:0;left:-5mm;bottom:-1mm;width:32mm;height:32mm;filter:drop-shadow(0 2mm 4mm #1769ff20)}.product-mockup{position:absolute;z-index:1;right:0;top:1mm;width:58mm;border:1px solid #cbd9eb;border-radius:3mm;background:#fff;box-shadow:0 5mm 11mm #16365c28;overflow:visible;transform:perspective(500px) rotateY(-4deg) rotateX(1deg)}.mockup-bar{height:6mm;padding:0 2mm;display:flex;align-items:center;gap:1.1mm;border-radius:3mm 3mm 0 0;background:linear-gradient(180deg,#f8fbff,#e9f0f8);color:#7d8da1;font-size:5.5px}.mockup-bar i{width:1.4mm;height:1.4mm;border-radius:50%;background:#ff6b6b;box-shadow:2.5mm 0 #ffc857,5mm 0 #35c98f}.mockup-bar span{margin-left:5mm}.product-mockup img{display:block;width:100%;height:27mm;object-fit:cover;object-position:top;border-radius:0 0 2.6mm 2.6mm}.mockup-badge{position:absolute;right:-3mm;bottom:-3mm;padding:1.8mm 2.4mm;border-radius:2mm;background:linear-gradient(135deg,#1769ff,#7656ff);color:#fff;font-size:6.2px;font-weight:750;box-shadow:0 2mm 5mm #1769ff35}
+    .orbit{width:47mm;height:47mm;justify-self:end}.section{margin-top:6mm}.section-heading{display:flex;align-items:center;gap:3mm;margin-bottom:3.5mm}.section-heading .index{min-width:12mm;padding:1.6mm 3mm;border-radius:.8mm;background:linear-gradient(135deg,#1769ff,#5b7cff);color:#fff;font-size:8px;font-weight:800;letter-spacing:.12em;text-align:center;box-shadow:0 3px 9px #1769ff24}.section-heading h2{font-size:15px;white-space:nowrap}.section-heading .line{height:1px;background:linear-gradient(90deg,#8bb3ff,#e2ebf8);flex:1}.section-heading small{font-size:7.5px;color:#73849a;white-space:nowrap}.section-title{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:4mm}.section-title h2{font-size:15px;letter-spacing:-.02em}.section-title small{font-size:8px;color:#91a0b2;letter-spacing:.1em}
+    .pain-layout{display:grid;grid-template-columns:46mm 1fr;gap:4mm;align-items:stretch}.pain-visual{position:relative;min-height:50mm;display:flex;align-items:center;justify-content:center;padding:3mm;background:linear-gradient(145deg,#eef5ffcc,#ffffffd9);border:1px solid #dfe8f4;border-radius:4mm;overflow:hidden}.pain-visual:after{content:"资料散落在文件、系统与外部渠道";position:absolute;left:3mm;right:3mm;bottom:2.5mm;padding:1.5mm 2mm;border-radius:2mm;background:#071a35e8;color:#fff;font-size:6.2px;text-align:center;letter-spacing:.02em}.pain-visual img{width:39mm;height:39mm;object-fit:contain;transform:translateY(-2mm)}.pain-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:2.5mm;align-items:stretch}.pain{grid-column:span 2;position:relative;min-height:23.7mm;padding:3.2mm 3mm;background:#ffffffd9;border:1px solid #dfe8f4;border-radius:3mm}.pain:nth-child(n+4){grid-column:span 3}.pain:before{content:"";position:absolute;left:0;top:4mm;bottom:4mm;width:1mm;border-radius:1mm;background:var(--c,var(--blue))}
+    .pain .num{font-size:7.5px;font-weight:800;color:var(--c,var(--blue))}.pain h3{margin-top:1.3mm;font-size:9.5px;line-height:1.3}.pain p{margin-top:1.1mm;font-size:7px;line-height:1.42;color:var(--muted)}
+    .audience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5mm}.audience{min-height:17mm;padding:2.5mm 3mm;display:flex;align-items:center;gap:2.5mm;background:#fff;border:1px solid #dfe8f4;border-radius:3mm}.audience-copy{min-width:0}.audience b{display:block;font-size:9px;line-height:1.25}.audience p{margin-top:1mm;font-size:7px;line-height:1.42;color:var(--muted)}.audience .ico{flex:0 0 auto;display:grid;place-items:center;width:8mm;height:8mm;border-radius:2mm;background:#eaf2ff;color:var(--blue);font-size:8.5px;font-weight:800}
+    .value-band{display:grid;grid-template-columns:35mm repeat(3,minmax(0,1fr));height:43mm;border-radius:4mm;overflow:hidden;background:var(--navy);color:#fff}.value-intro{padding:3.6mm 4.5mm;background:linear-gradient(145deg,#0a2143,#0d2c59)}.value-intro h2{font-size:13px;line-height:1.3}.value-intro p{margin-top:2mm;font-size:7px;line-height:1.45;color:#bdd0e8}
+    .metric{position:relative;min-width:0;padding:4mm;border-left:1px solid #ffffff20;display:flex;flex-direction:column;justify-content:center}.metric-icon{position:absolute;right:1.5mm;top:2mm;width:18mm;height:18mm;object-fit:contain;filter:drop-shadow(0 4px 7px #0004)}.metric .before{padding-right:16mm;font-size:7.5px;color:#9eb2cb}.metric strong{position:relative;font-size:14px;line-height:1.25;margin:2mm 0;color:#fff;white-space:nowrap}.metric strong span{display:block;margin-top:.8mm;color:#55c7ff;font-size:15px;white-space:nowrap}.metric p{font-size:7px;line-height:1.5;color:#bdd0e8}.metric .arrow{margin:2mm 0;color:#4dbbff;font-weight:700}
+    .promise{margin-top:4.5mm;padding:4mm 5mm;display:grid;grid-template-columns:1.05fr 1.95fr;gap:8mm;align-items:center;background:#ffffffdc;border:1px solid #dfe8f4;border-radius:3mm}.promise h2{font-size:15px;line-height:1.4}.promise h2 em{font-style:normal;color:var(--blue)}.promise p{font-size:8.5px;line-height:1.6;color:var(--muted)}
+    .principles{margin-top:3mm;display:flex;gap:4mm}.principle{display:flex;align-items:center;gap:2mm;font-size:8px;font-weight:650}.principle b{width:5mm;height:5mm;display:grid;place-items:center;border-radius:50%;background:#eaf2ff;color:var(--blue);font-size:6px}.positioning{margin-top:4mm;display:grid;grid-template-columns:1.25fr repeat(3,1fr);overflow:hidden;border-radius:3mm;background:linear-gradient(135deg,#1769ff,#315dcb 65%,#7656ff);color:#fff}.position-main{padding:4mm}.position-main b{font-size:10px}.position-main p{margin-top:1.2mm;font-size:7px;line-height:1.45;color:#dce8ff}.position-item{padding:4mm 3mm;border-left:1px solid #ffffff2b}.position-item b{display:block;font-size:8px}.position-item span{display:block;margin-top:1mm;font-size:6.6px;line-height:1.4;color:#dce8ff}
+    .back-header{margin-top:4mm;display:grid;grid-template-columns:1fr auto;gap:8mm;align-items:end}.back .section{margin-top:5mm}.back-header h1{font-size:23px;line-height:1.2;letter-spacing:-.04em}.back-header p{margin-top:2mm;font-size:9px;color:var(--muted)}.back-header .tag{font-size:8px;border:1px solid #bcd1ed;border-radius:99px;padding:2mm 3.5mm;color:var(--blue);font-weight:700}
+    .team-map{display:grid;grid-template-columns:34mm 1fr 36mm;align-items:center;gap:4mm;min-height:46mm}.team-core{height:34mm;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--navy);color:#fff;box-shadow:0 0 0 2.5mm #e8f1ff}.team-icon{display:block;width:10mm;height:10mm;margin:0 auto 1.5mm}.team-core strong{font-size:11px}.team-core span{font-size:7.5px;color:#afc6e4}.experts{display:grid;grid-template-columns:repeat(3,1fr);gap:2mm}.expert{min-height:18mm;padding:3mm 2.5mm;border-top:2px solid var(--c);background:linear-gradient(180deg,color-mix(in srgb,var(--c) 7%,white),#fff)}.expert b{display:block;font-size:8.5px}.expert span{display:block;margin-top:1mm;font-size:7px;line-height:1.4;color:var(--muted)}
+    .human{border-left:1px solid var(--line);padding-left:5mm}.human b{display:block;font-size:11px}.human p{margin-top:2mm;font-size:8.5px;line-height:1.55;color:var(--muted)}.human ul{margin:3mm 0 0;padding:0;list-style:none}.human li{font-size:8.5px;margin-top:1.8mm;color:var(--ink)}.human li:before{content:"✓";color:var(--blue);font-weight:800;margin-right:2mm}
+    .usage-options{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5mm;margin-bottom:2.5mm}.usage-option{position:relative;padding:3mm 3.5mm 3mm 11mm;background:#ffffffde;border:1px solid #dbe5f2;border-radius:3mm;overflow:hidden}.usage-option:before{content:attr(data-no);position:absolute;left:3mm;top:3mm;width:6mm;height:6mm;display:grid;place-items:center;border-radius:1.5mm;background:#eaf2ff;color:var(--blue);font-size:7px;font-weight:800}.usage-option b{display:block;font-size:9px}.usage-option p{margin-top:1mm;font-size:6.8px;line-height:1.42;color:var(--muted)}.workflow{position:relative;padding:3.5mm 4mm 4mm;background:#ffffffd9;border:1px solid #dbe5f2;border-radius:4mm;overflow:hidden}.workflow:before{content:"";position:absolute;left:0;right:0;top:0;height:2.2mm;background:linear-gradient(90deg,#1769ff,#27b3ff 55%,#7656ff)}.workflow-head{display:flex;justify-content:space-between;align-items:center;margin-top:1mm}.workflow h2{font-size:11px}.workflow small{font-size:7px;color:var(--muted)}.jump-map{position:absolute;left:8mm;right:8mm;top:10.5mm;width:calc(100% - 16mm);height:18mm;pointer-events:none}.steps{position:relative;margin-top:7mm;display:flex;align-items:center}.steps:before{content:"";position:absolute;left:4%;right:4%;top:3.2mm;height:1.8mm;border-radius:2mm;background:linear-gradient(90deg,#1769ff,#27b3ff 55%,#7656ff);opacity:.2}.step{position:relative;z-index:2;flex:1;text-align:center}.step b{display:grid;place-items:center;margin:auto;width:6.5mm;height:6.5mm;border-radius:50%;background:#fff;border:1.5px solid var(--blue);color:var(--blue);font-size:7px}.step span{display:block;margin-top:1.2mm;font-size:6.7px;font-weight:650}.chev{display:none}.gate{display:inline-block;margin-top:.5mm;padding:.35mm .9mm;border-radius:99px;background:#fff0df;color:#c56c22;font-size:5.3px}
+    .platform{margin-top:0}.platform h2{font-size:14px}.platform-sub{margin-top:1mm;font-size:7.6px;color:var(--muted)}.cap-layout{margin-top:3mm;display:grid;grid-template-columns:32mm 1fr;gap:2.5mm;align-items:stretch}.cap-visual{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2mm;background:linear-gradient(145deg,#f0f6ff,#fff);border:1px solid var(--line);border-radius:3mm}.cap-visual img{width:27mm;height:27mm;object-fit:contain}.cap-visual span{margin-top:1mm;font-size:6.4px;line-height:1.35;text-align:center;color:var(--muted)}.cap-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);background:#ffffffd9}.cap{min-height:20mm;padding:2.8mm;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.cap b{display:block;font-size:8.4px}.cap span{display:block;margin-top:1.2mm;font-size:6.8px;line-height:1.45;color:var(--muted)}.cap i{display:block;width:4mm;height:.8mm;margin-bottom:1.5mm;background:var(--c)}
+    .bottom-combo{display:grid;grid-template-columns:1.08fr .92fr;gap:3mm;align-items:stretch}.foundation{margin:0;display:grid;grid-template-columns:repeat(2,1fr);border-radius:3mm;overflow:hidden;background:var(--navy);color:#fff}.foundation-title{grid-column:1/-1;padding:2.5mm 3mm;font-size:8.5px;font-weight:700;background:#05152b}.base{padding:2.4mm;border-top:1px solid #ffffff1f}.base:nth-child(even){border-right:1px solid #ffffff1f}.base b{display:block;font-size:7.6px;color:#fff}.base span{display:block;margin-top:.7mm;font-size:6px;line-height:1.35;color:#b2c5dc}.governance{margin-top:3mm;display:grid;grid-template-columns:repeat(4,1fr);gap:2mm}.gov{padding:2.8mm 3mm;background:#ffffffdf;border:1px solid #dbe5f2;border-radius:2.5mm}.gov b{display:block;font-size:7.8px}.gov span{display:block;margin-top:.8mm;font-size:6.4px;line-height:1.4;color:var(--muted)}
+    .use-output{display:block;height:100%}.outputs{height:100%;padding:3mm 3.5mm;background:#ffffffd9;border:1px solid #dfe8f4;border-radius:3mm}.outputs h3{font-size:9.5px;text-align:center}.output-style-note{margin-top:.7mm;font-size:6.2px;line-height:1.3;text-align:center;color:var(--blue);font-weight:650}.output-list{display:grid;grid-template-columns:repeat(3,1fr);gap:2mm;margin-top:1.4mm;align-items:stretch}.output{padding:2.2mm 2mm;text-align:center;background:#f7faff;border-radius:2mm;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}.file-icon{flex:0 0 auto;width:9mm;height:10mm;margin:0 auto 1.3mm;display:grid!important;place-items:center;border-radius:2mm;background:var(--fc);color:#fff}.file-icon svg{display:block;width:5mm;height:5mm;fill:#fff!important;color:#fff!important}.output b{display:block;width:100%;font-size:7.8px;text-align:center}.output span{display:block;width:100%;margin-top:.7mm;font-size:6.2px;color:var(--muted);text-align:center}
+    .close{margin-top:4mm;display:flex;align-items:center;justify-content:space-between}.close strong{font-size:10px}.close span{font-size:7px;color:var(--muted)}
+    .team-icon{fill:#8fd3ff}.concept-orbit>circle:nth-of-type(2){fill:none}
+    /* Print legibility pass: explanatory copy stays readable without changing the page hierarchy. */
+    .pain .num{display:inline-block;vertical-align:baseline;font-size:8px}.pain h3{display:inline;margin:0 0 0 1.8mm;font-size:9.7px}.pain p{margin-top:1.5mm;font-size:7.5px;line-height:1.45}.pain-visual:after{font-size:6.7px}
+    .section-heading small{font-size:7.8px}.audience p{font-size:7.3px}.value-intro p,.metric p{font-size:7.2px}.position-main p{font-size:7.2px}.position-item span{font-size:7px}.expert span{font-size:7.3px}.usage-option p{font-size:7.15px}.workflow small{font-size:7.35px}.step span{font-size:7px}.platform-sub{font-size:7.9px}.cap-visual span{font-size:6.8px}.cap span{font-size:7.1px}.base span{font-size:6.55px}.output-style-note{font-size:6.7px}.output span{font-size:6.65px}.output .file-icon{width:9mm}.close span{font-size:7px}
+    @media print{html,body{background:#fff}body{padding:0}.sheet{margin:0;box-shadow:none;break-after:auto;page-break-after:auto}.back{break-before:page;page-break-before:always}@page{size:A4 portrait;margin:0}}
+  </style>
+</head>
+<body>
+  <section class="sheet front">
+    <div class="topbar"><div class="brand"><i>AI</i> 投资项目智能评审</div><img class="fanruan-logo" src="assets/logo-fanruan.png" alt="帆软"></div>
+    <div class="front-head">
+      <div class="hero-copy">
+        <div class="kicker">Investment Decision Agent</div>
+        <h1>给每个项目，<br>配一支<em>独家定制的AI投资团队</em></h1>
+        <p class="lead">把企业内外部数据、投资制度、专业方法与多专家 Agent 汇成统一项目上下文，<strong>让 AI 把投前功课做深、做全、做快，让人专注真正重要的判断。</strong></p>
+      </div>
+      <div class="hero-visual">
+        <svg class="concept-orbit" viewBox="0 0 200 200" aria-label="项目专属AI投资团队示意图"><defs><linearGradient id="heroOrbitGradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1769ff"/><stop offset="1" stop-color="#7656ff"/></linearGradient></defs><circle cx="100" cy="100" r="43" fill="url(#heroOrbitGradient)"/><circle cx="100" cy="100" r="70" fill="#f8fbff" fill-opacity=".72" stroke="#aac8f5" stroke-dasharray="4 6"/><circle cx="100" cy="100" r="91" fill="none" stroke="#d5e3f6"/><circle cx="100" cy="8" r="11" fill="#fff" stroke="#1769ff" stroke-width="2"/><circle cx="180" cy="54" r="11" fill="#fff" stroke="#1769ff" stroke-width="2"/><circle cx="180" cy="146" r="11" fill="#fff" stroke="#1769ff" stroke-width="2"/><circle cx="100" cy="192" r="11" fill="#fff" stroke="#1769ff" stroke-width="2"/><circle cx="20" cy="146" r="11" fill="#fff" stroke="#1769ff" stroke-width="2"/><circle cx="20" cy="54" r="11" fill="#fff" stroke="#1769ff" stroke-width="2"/><g fill="#fff" font-size="11" text-anchor="middle" font-weight="700"><text x="100" y="97">项目专属</text><text x="100" y="113">AI 团队</text></g><g fill="#1769ff" font-size="8" text-anchor="middle" font-weight="700"><text x="100" y="11">研</text><text x="180" y="57">财</text><text x="180" y="149">税</text><text x="100" y="195">法</text><text x="20" y="149">险</text><text x="20" y="57">督</text></g></svg>
+        <div class="product-mockup" aria-label="投资项目智能评审产品页面样机">
+          <div class="mockup-bar"><i></i><span>Investment Decision Agent</span></div>
+          <img src="assets/product-homepage.png" alt="投资项目智能评审产品首页">
+          <span class="mockup-badge">一个入口 · 一支专属团队</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading"><span class="index">01</span><h2>为什么需要投资决策 Agent</h2><span class="line"></span><small>五个高频断点</small></div>
+      <div class="pain-layout">
+        <div class="pain-visual"><img src="assets/pain-data-illustration.png" alt="数据与系统分散示意图"></div>
+        <div class="pain-flow">
+          <div class="pain" style="--c:#1769ff"><span class="num">01</span><h3>资料多而散</h3><p>文件、系统与外部渠道分散，查找核对吞噬分析时间。</p></div>
+          <div class="pain" style="--c:#7656ff"><span class="num">02</span><h3>专业协同慢</h3><p>业务、财务、税务、法务各自审阅，观点难以及时收敛。</p></div>
+          <div class="pain" style="--c:#0aa6a0"><span class="num">03</span><h3>风险靠经验</h3><p>方法依赖个人敏感度，项目之间的评审质量不稳定。</p></div>
+          <div class="pain" style="--c:#f08a3c"><span class="num">04</span><h3>修改不闭环</h3><p>专家意见与报告版本脱节，采纳与改动难追踪。</p></div>
+          <div class="pain" style="--c:#e95757"><span class="num">05</span><h3>经验难复用</h3><p>项目结束即归档，框架、规则与判断没有沉淀为能力。</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading"><span class="index">02</span><h2>为谁服务</h2><span class="line"></span><small>统一上下文 · 分角色获益</small></div>
+      <div class="audience-grid">
+        <div class="audience"><span class="ico">决</span><div class="audience-copy"><b>董事长与企业决策者</b><p>看清项目价值、重大风险与推进条件。</p></div></div>
+        <div class="audience"><span class="ico">评</span><div class="audience-copy"><b>投资负责人及评审委员</b><p>快速获得结构完整、依据清晰的材料。</p></div></div>
+        <div class="audience"><span class="ico">项</span><div class="audience-copy"><b>投资项目团队</b><p>减少整理、核查、撰写和反复修改。</p></div></div>
+        <div class="audience"><span class="ico">专</span><div class="audience-copy"><b>财务 · 税务 · 法务 · 风险</b><p>在统一上下文中开展专业协同。</p></div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading"><span class="index">03</span><h2>产品价值</h2><span class="line"></span><small>把投前功课做深、做全、做快</small></div>
+      <div class="value-band">
+      <div class="value-intro"><div class="kicker" style="color:#55c7ff">PRODUCT VALUE</div><h2>复杂材料，快速变成清晰依据</h2><p>聚合、核验、分析、质询、成稿在同一项目上下文中完成。</p></div>
+      <div class="metric"><img class="metric-icon" src="assets/icon-material-report.png" alt="分析报告"><span class="before">百页材料关键信息提取</span><strong>4–6 小时 <span>→ 3–5 分钟</span></strong><p>释放人工整理时间，把注意力还给判断。</p></div>
+      <div class="metric"><img class="metric-icon" src="assets/icon-due-diligence-folder.png" alt="尽调文件夹"><span class="before">中型项目竞争性尽调</span><strong>1–2 周 <span>→ 20–40 分钟</span></strong><p>多专业并行分析，重大例外及时交由人裁决。</p></div>
+      <div class="metric"><img class="metric-icon" src="assets/icon-data-crosscheck.png" alt="跨系统核查"><span class="before">跨系统数据核查</span><strong>2–3 个工作日 <span>→ 5–10 分钟</span></strong><p>自动连接、核验并标记来源，减少重复切换与人工抄录。</p></div>
+      </div>
+    </div>
+
+    <div class="promise">
+      <h2>AI 不替企业做决定，<br><em>只让每个决定更有依据。</em></h2>
+      <div><p>事实、推断与假设分层呈现；关键节点由人确认；专家共识与未决分歧同时保留；报告与修改全程留痕。</p><div class="principles"><span class="principle"><b>01</b>依据可解释</span><span class="principle"><b>02</b>流程可控制</span><span class="principle"><b>03</b>结果可追踪</span><span class="principle"><b>04</b>能力可复用</span></div></div>
+    </div>
+    <div class="positioning">
+      <div class="position-main"><b>不是通用聊天机器人</b><p>而是一套懂企业方法、能调用专业工具的投前评审能力体系。</p></div>
+      <div class="position-item"><b>懂企业规则</b><span>投资制度、评审规则、风险偏好进入统一知识基座。</span></div>
+      <div class="position-item"><b>能专业执行</b><span>检索、核查、测算、质询与报告生成按任务自动组合。</span></div>
+      <div class="position-item"><b>会持续沉淀</b><span>优秀方法、模板、专家意见与历史项目转化为可复用资产。</span></div>
+    </div>
+    <div class="page-no">FRONT · 01</div>
+  </section>
+
+  <section class="sheet back">
+    <div class="topbar"><div class="brand"><i>AI</i> 投资项目智能评审</div><img class="fanruan-logo" src="assets/logo-fanruan.png" alt="帆软"></div>
+    <div class="back-header"><div><div class="kicker">ONE PROJECT · ONE TEAM · ONE CONTEXT</div><h1>一支会研究、会质询、会交付的 AI 投资团队</h1><p>从机会发现到决策摘要，覆盖投前研判完整链路，也支持能力按需单独调用与自由组合。</p></div><span class="tag">自然语言对话入口</span></div>
+
+    <div class="section">
+      <div class="section-heading"><span class="index">01</span><h2>项目专属 AI 投资团队</h2><span class="line"></span><small>多专家分工 · 交叉质询 · 共识收敛</small></div>
+    <div class="team-map">
+      <div class="team-core"><div><svg class="team-icon" viewBox="0 0 1024 1024" fill="#fff" aria-hidden="true"><path d="M797.994667 659.84c-26.666667 0-47.018667-19.925333-47.018667-45.952V388.693333c0-116.48-97.152-211.456-216.234667-211.456h-45.482666C370.218667 177.237333 273.066667 272.256 273.066667 388.693333v225.194667c0 26.026667-20.352 45.952-47.018667 45.952-26.624 0-47.018667-19.925333-47.018667-45.952V388.693333c0-166.997333 139.52-303.36 310.272-303.36h45.482667c170.794667 0 310.272 136.362667 310.272 303.36v225.194667c0 24.490667-20.394667 45.952-47.018667 45.952z"/><path d="M226.005333 681.301333H89.685333C63.018667 681.301333 42.666667 661.333333 42.666667 635.306667V417.834667c0-26.026667 20.352-45.952 47.018666-45.952h136.32c26.666667 0 47.018667 19.882667 47.018667 45.952v217.514666c0 26.069333-21.930667 45.994667-47.018667 45.994667zm-89.301333-91.946666h42.282667V463.786667h-42.282667v125.610666zM934.314667 681.301333h-136.32c-26.666667 0-47.018667-19.925333-47.018667-45.994666V417.834667c0-26.026667 20.352-45.952 47.018667-45.952h136.32c26.666667 0 47.018667 19.882667 47.018666 45.952v217.514666c0 26.069333-21.930667 45.994667-47.018666 45.994667zm-89.301334-91.946666h42.282667V463.786667h-42.282667v125.610666zM511.232 938.666667c38.058667 0 68.949333-30.165333 68.949333-67.413334 0-37.205333-30.890667-67.413333-68.949333-67.413333-38.101333 0-68.949333 30.208-68.949333 67.413333 0 37.248 30.848 67.413333 68.949333 67.413334zM401.493333 508.16c24.277333 0 43.946667-19.2 43.946667-42.88 0-23.68-19.669333-42.922667-43.946667-42.922667-24.192 0-43.861333 19.2-43.861333 42.922667 0 23.68 19.626667 42.88 43.904 42.88zM620.928 508.16c24.192 0 43.861333-19.2 43.861333-42.88 0-23.68-19.626667-42.922667-43.861333-42.922667-24.234667 0-43.904 19.2-43.904 42.922667 0 23.68 19.626667 42.88 43.904 42.88z"/><path d="M550.4 923.306667h-39.168c-26.666667 0-47.018667-19.882667-47.018667-45.909334 0-26.026667 20.352-45.994667 47.018667-45.994666h39.168c109.653333 0 200.576-87.296 200.576-196.096 0-26.026667 20.352-45.952 47.018667-45.952 26.624 0 47.018667 19.925333 47.018666 45.952 0 159.36-131.626667 288-294.613333 288z"/></svg><strong>项目研究员</strong><br><span>统筹目标 · 数据 · 产出</span></div></div>
+      <div class="experts">
+        <div class="expert" style="--c:#1769ff"><b>财务专家</b><span>财务审阅、情景测算、敏感性分析</span></div>
+        <div class="expert" style="--c:#0aa6a0"><b>税务专家</b><span>交易安排、税负影响与合规核查</span></div>
+        <div class="expert" style="--c:#27b3ff"><b>会议监督员</b><span>组织质询、控制轮次、收敛共识并保留分歧</span></div>
+        <div class="expert" style="--c:#f08a3c"><b>法务专家</b><span>主体资质、合同条款、诉讼与退出机制</span></div>
+        <div class="expert" style="--c:#e95757"><b>风险专家</b><span>市场、经营、政策、技术、声誉风险扫描</span></div>
+        <div class="expert" style="--c:#7656ff"><b>其他专家 Agent</b><span>根据业务场景随心定制，等你探索...</span></div>
+      </div>
+      <div class="human"><b>人始终掌控关键判断</b><p>AI 自动完成基础工作，在材料缺失、数据冲突、估值越界或重大风险出现时请求人工裁决。</p><ul><li>可从任意节点启动</li><li>可暂停、跳过、回补、重跑</li><li>可定向追问任一专家</li></ul></div>
+    </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading"><span class="index">02</span><h2>能力使用</h2><span class="line"></span><small>发现机会 · 完整评估 · 按需组合</small></div>
+      <div class="usage-options">
+        <div class="usage-option" data-no="1"><b>机会发现</b><p>从行业事件、企业变化、资本动态和舆情信号中筛选与企业战略高度相关的机会。</p></div>
+        <div class="usage-option" data-no="2"><b>全流程评估</b><p>围绕单个项目启动八阶段完整投前评审，关键节点由人确认，过程和产物持续留痕。</p></div>
+        <div class="usage-option" data-no="3"><b>单点功能随意组合调用</b><p>按需调用背调、财务测算、估值、法务、风险、圆桌或报告，并在同一上下文中自由组合。</p></div>
+      </div>
+    <div class="workflow">
+      <div class="workflow-head"><h2>全流程评估</h2><small>默认有秩序，也支持暂停、跳过、回补与重跑</small></div>
+      <svg class="jump-map" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="jumpArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1769ff"/></marker></defs><g fill="none" stroke="#1769ff" stroke-width="3" stroke-dasharray="10 9" opacity=".55" marker-end="url(#jumpArrow)"><path d="M55 92 Q225 2 395 92"/><path d="M310 92 Q500 8 690 92"/><path d="M565 92 Q755 0 945 92"/><path d="M55 108 Q185 198 315 108"/><path d="M310 108 Q470 194 630 108"/><path d="M565 108 Q755 200 945 108"/></g></svg>
+      <div class="steps">
+        <div class="step"><b>1</b><span>目标确认</span></div><i class="chev">›</i>
+        <div class="step"><b>2</b><span>立项建议书</span></div><i class="chev">›</i>
+        <div class="step"><b>3</b><span>内部评审</span><i class="gate">人工把关</i></div><i class="chev">›</i>
+        <div class="step"><b>4</b><span>尽调评估</span></div><i class="chev">›</i>
+        <div class="step"><b>5</b><span>可研报告</span></div><i class="chev">›</i>
+        <div class="step"><b>6</b><span>专家评审</span><i class="gate">圆桌质询</i></div><i class="chev">›</i>
+        <div class="step"><b>7</b><span>报告修订</span></div><i class="chev">›</i>
+        <div class="step"><b>8</b><span>决策摘要</span></div>
+      </div>
+    </div>
+    </div>
+
+    <div class="section platform">
+      <div class="section-heading"><span class="index">03</span><h2>产品能力全景</h2><span class="line"></span><small>找机会 · 看项目 · 做判断 · 出材料</small></div>
+      <p class="platform-sub">既能一键跑完整流程，也能在同一项目讨论中按需组合专业能力。</p>
+      <div class="cap-layout">
+      <div class="cap-visual"><img src="assets/product-capability-illustration.svg" alt="AI 专业能力协作示意图"><span>围绕项目上下文<br>自主调用专业能力</span></div>
+      <div class="cap-grid">
+        <div class="cap" style="--c:#1769ff"><i></i><b>投资机会发现</b><span>战略关联筛选<br>一页式快速研判</span></div>
+        <div class="cap" style="--c:#7656ff"><i></i><b>企业背景调查</b><span>关系穿透核查<br>多源交叉验证</span></div>
+        <div class="cap" style="--c:#0aa6a0"><i></i><b>财务分析测算</b><span>ROI / NPV / IRR<br>多情景敏感性</span></div>
+        <div class="cap" style="--c:#f08a3c"><i></i><b>估值分析</b><span>多方法验证<br>区间与溢价判断</span></div>
+        <div class="cap" style="--c:#d79a24"><i></i><b>法务审查</b><span>交易结构合规<br>合同与退出机制</span></div>
+        <div class="cap" style="--c:#e95757"><i></i><b>风险识别监测</b><span>多维风险扫描<br>证据关联核查</span></div>
+        <div class="cap" style="--c:#0aa6a0"><i></i><b>多专家圆桌</b><span>独立研判质询<br>共识分歧保留</span></div>
+        <div class="cap" style="--c:#7656ff"><i></i><b>报告生成修订</b><span>来源分层标记<br>版本差异闭环</span></div>
+        <div class="cap" style="--c:#1769ff"><i></i><b>决策摘要</b><span>价值风险并列<br>条件与未决事项</span></div>
+        <div class="cap" style="--c:#37a767"><i></i><b>智能问答</b><span>制度知识问答<br>进度与分析调取</span></div>
+      </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading"><span class="index">04</span><h2>关键产物</h2><span class="line"></span><small>从分析判断到决策材料闭环</small></div>
+      <div class="bottom-combo">
+      <div class="use-output">
+        <div class="outputs"><h3>结构化决策材料</h3><p class="output-style-note">公文风格 · 日报风格 · AI 极简风格，随心定制</p><div class="output-list">
+          <div class="output"><span class="file-icon" style="--fc:#1769ff"><svg viewBox="0 0 1024 1024" fill="currentColor"><path d="M324.266667 136.533333a34.133333 34.133333 0 0 1 2.56 68.181334L324.266667 204.8h-119.466667v682.666667h614.4V204.8h-110.933333a34.133333 34.133333 0 0 1-2.56-68.181333L708.266667 136.533333H819.2a68.266667 68.266667 0 0 1 68.181333 64.853334L887.466667 204.8v682.666667a68.266667 68.266667 0 0 1-64.853334 68.181333L819.2 955.733333H204.8a68.266667 68.266667 0 0 1-68.181333-64.853333L136.533333 887.466667V204.8a68.266667 68.266667 0 0 1 64.853334-68.181333L204.8 136.533333h119.466667z"/><path d="M631.466667 68.266667H392.533333c-56.405333 0-102.4 45.994667-102.4 102.4s45.994667 102.4 102.4 102.4h238.933334c56.405333 0 102.4-45.994667 102.4-102.4s-45.994667-102.4-102.4-102.4zm-238.933334 68.266666h238.933334c18.688 0 34.133333 15.445333 34.133333 34.133334s-15.445333 34.133333-34.133333 34.133333H392.533333c-18.688 0-34.133333-15.445333-34.133333-34.133333s15.445333-34.133333 34.133333-34.133334z"/><path d="m675.601067 419.601067 48.264533 48.264533-221.866667 221.866667a34.133333 34.133333 0 0 1-48.264533 0l-136.533333-136.533334 48.264533-48.264533L477.866667 617.301333z"/></svg></span><b>立项建议书</b><span>项目必要性与初步判断</span></div>
+          <div class="output"><span class="file-icon" style="--fc:#7656ff"><svg viewBox="0 0 1024 1024" fill="currentColor"><path d="M324.266667 136.533333a34.133333 34.133333 0 0 1 2.56 68.181334L324.266667 204.8h-119.466667v682.666667h614.4V204.8h-110.933333a34.133333 34.133333 0 0 1-2.56-68.181333L708.266667 136.533333H819.2a68.266667 68.266667 0 0 1 68.181333 64.853334L887.466667 204.8v682.666667a68.266667 68.266667 0 0 1-64.853334 68.181333L819.2 955.733333H204.8a68.266667 68.266667 0 0 1-68.181333-64.853333L136.533333 887.466667V204.8a68.266667 68.266667 0 0 1 64.853334-68.181333L204.8 136.533333h119.466667z"/><path d="M631.466667 68.266667H392.533333c-56.405333 0-102.4 45.994667-102.4 102.4s45.994667 102.4 102.4 102.4h238.933334c56.405333 0 102.4-45.994667 102.4-102.4s-45.994667-102.4-102.4-102.4zm-238.933334 68.266666h238.933334c18.688 0 34.133333 15.445333 34.133333 34.133334s-15.445333 34.133333-34.133333 34.133333H392.533333c-18.688 0-34.133333-15.445333-34.133333-34.133333s15.445333-34.133333 34.133333-34.133334z"/><path d="m675.601067 419.601067 48.264533 48.264533-221.866667 221.866667a34.133333 34.133333 0 0 1-48.264533 0l-136.533333-136.533334 48.264533-48.264533L477.866667 617.301333z"/></svg></span><b>可行性研究报告</b><span>事实、分析与建议完整成稿</span></div>
+          <div class="output"><span class="file-icon" style="--fc:#0aa6a0"><svg viewBox="0 0 1024 1024" fill="currentColor"><path d="M324.266667 136.533333a34.133333 34.133333 0 0 1 2.56 68.181334L324.266667 204.8h-119.466667v682.666667h614.4V204.8h-110.933333a34.133333 34.133333 0 0 1-2.56-68.181333L708.266667 136.533333H819.2a68.266667 68.266667 0 0 1 68.181333 64.853334L887.466667 204.8v682.666667a68.266667 68.266667 0 0 1-64.853334 68.181333L819.2 955.733333H204.8a68.266667 68.266667 0 0 1-68.181333-64.853333L136.533333 887.466667V204.8a68.266667 68.266667 0 0 1 64.853334-68.181333L204.8 136.533333h119.466667z"/><path d="M631.466667 68.266667H392.533333c-56.405333 0-102.4 45.994667-102.4 102.4s45.994667 102.4 102.4 102.4h238.933334c56.405333 0 102.4-45.994667 102.4-102.4s-45.994667-102.4-102.4-102.4zm-238.933334 68.266666h238.933334c18.688 0 34.133333 15.445333 34.133333 34.133334s-15.445333 34.133333-34.133333 34.133333H392.533333c-18.688 0-34.133333-15.445333-34.133333-34.133333s15.445333-34.133333 34.133333-34.133334z"/><path d="m675.601067 419.601067 48.264533 48.264533-221.866667 221.866667a34.133333 34.133333 0 0 1-48.264533 0l-136.533333-136.533334 48.264533-48.264533L477.866667 617.301333z"/></svg></span><b>一页决策摘要</b><span>价值、风险、条件与未决事项</span></div>
+        </div></div>
+      </div>
+      <div class="foundation">
+      <div class="foundation-title">四大能力基座 · 项目隔离 / 来源追溯 / 版本治理</div>
+      <div class="base"><b>数据连接</b><span>内外部系统与多源数据统一接入</span></div>
+      <div class="base"><b>知识沉淀</b><span>制度、历史项目、模板与方法持续复用</span></div>
+      <div class="base"><b>专家协作</b><span>多 Agent 分工、质询、共识与分歧管理</span></div>
+      <div class="base"><b>工具执行</b><span>检索、核查、测算、生成与版本追踪</span></div>
+      </div>
+      </div>
+    </div>
+
+    <div class="close"><strong>让项目适配流程，也让流程适配项目。</strong><span>投资项目智能评审 · AI 辅助研判，不替代正式投资决策</span></div>
+    <div class="page-no">BACK · 02</div>
+  </section>
+</body>
+</html>

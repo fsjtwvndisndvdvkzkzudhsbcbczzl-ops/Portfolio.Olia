@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "action": "chat-result",
+  "mode": "full",
+  "data": {
+    "jobId": "a6aa2f22-b408-49ff-bd58-5306a7fdbdc4",
+    "status": "SUCCEEDED",
+    "publishedAgentId": "agent-1",
+    "externalSessionKey": "fine-dora-session-1",
+    "queryId": "query-1",
+    "completedAt": 1775460244.98,
+    "error": null,
+    "result": {
+      "externalSessionKey": "fine-dora-session-1",
+      "queryId": "query-1",
+      "status": "SUCCESS",
+      "content": "Sales revenue grew 18% year over year, mainly driven by the East region.",
+      "messages": [
+        {
+          "type": "STEP",
+          "status": "PROCESSING",
+          "content": "Collecting the latest sales metrics from Dora."
+        },
+        {
+          "type": "RESULT",
+          "status": "SUCCESS",
+          "content": "Sales revenue grew 18% year over year, mainly driven by the East region."
+        }
+      ],
+      "displayText": "Sales revenue grew 18% year over year, mainly driven by the East region.",
+      "messageSummaries": [
+        {
+          "type": "STEP",
+          "status": "PROCESSING",
+          "content": "Collecting the latest sales metrics from Dora."
+        },
+        {
+          "type": "RESULT",
+          "status": "SUCCESS",
+          "content": "Sales revenue grew 18% year over year, mainly driven by the East region."
+        }
+      ]
+    },
+    "ready": true
+  },
+  "error": null,
+  "meta": {
+    "action": "chat-result"
+  }
+}

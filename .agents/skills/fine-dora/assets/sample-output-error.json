@@ -1,0 +1,11 @@
+{
+  "success": false,
+  "action": "create-agent",
+  "mode": "full",
+  "data": null,
+  "error": "user_confirmed is required before create-agent",
+  "meta": {
+    "action": "create-agent",
+    "channel_type": "feishu"
+  }
+}

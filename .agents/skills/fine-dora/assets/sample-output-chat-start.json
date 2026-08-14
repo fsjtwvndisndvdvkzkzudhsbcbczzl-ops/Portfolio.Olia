@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "action": "chat-start",
+  "mode": "full",
+  "data": {
+    "jobId": "a6aa2f22-b408-49ff-bd58-5306a7fdbdc4",
+    "status": "RUNNING",
+    "publishedAgentId": "agent-1",
+    "externalSessionKey": "fine-dora-session-1",
+    "queryId": "query-1",
+    "channelType": "feishu",
+    "traceId": "trace-1"
+  },
+  "error": null,
+  "meta": {
+    "action": "chat-start",
+    "published_agent_id": "agent-1",
+    "channel_type": "feishu"
+  }
+}

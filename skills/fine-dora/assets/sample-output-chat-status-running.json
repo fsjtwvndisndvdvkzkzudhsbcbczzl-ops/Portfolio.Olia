@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "action": "chat-status",
+  "mode": "full",
+  "data": {
+    "jobId": "a6aa2f22-b408-49ff-bd58-5306a7fdbdc4",
+    "status": "RUNNING",
+    "publishedAgentId": "agent-1",
+    "externalSessionKey": "fine-dora-session-1",
+    "queryId": "query-1",
+    "channelType": "feishu",
+    "traceId": "trace-1",
+    "createdAt": 1775460240.12,
+    "updatedAt": 1775460241.44,
+    "completedAt": null,
+    "error": null,
+    "resultReady": false
+  },
+  "error": null,
+  "meta": {
+    "action": "chat-status"
+  }
+}

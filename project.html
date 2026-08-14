@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>项目案例 | Olia.Shuyu</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css?v=20260814-2" />
+  </head>
+  <body class="detail-body case-body">
+    <main class="case-shell">
+      <header class="topbar detail-topbar case-topbar">
+        <a class="identity" href="index.html" aria-label="Olia.Shuyu 首页">
+          <span class="identity-mark">O</span>
+          <span>OLIA.SHUYU</span>
+          <small>AI PRODUCT / FDE / EXPERIENCE DESIGN</small>
+        </a>
+        <nav class="topnav" aria-label="作品集导航">
+          <a data-nav-section="home" href="./index.html">首页</a>
+          <a class="is-active" data-nav-section="projects" href="./explore.html?section=projects">项目</a>
+          <a data-nav-section="internships" href="./explore.html?section=internships">实习</a>
+          <a data-nav-section="competitions" href="./explore.html?section=competitions">竞赛</a>
+          <a data-nav-section="experience" href="./explore.html?section=experience">实践</a>
+          <a data-nav-section="about" href="./explore.html?section=about">关于我</a>
+        </nav>
+        <button class="assistant-entry js-ai-open" type="button" data-context="projects">
+          <span>AI 作品集助手</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+      </header>
+
+      <section class="case-overview" aria-labelledby="detail-title">
+        <a class="case-back" href="explore.html?section=projects">← 返回项目全景</a>
+        <p class="case-meta" id="detail-meta">FDE 项目</p>
+        <h1 id="detail-title">项目案例</h1>
+        <p class="case-summary" id="detail-summary"></p>
+
+        <dl class="case-quick-facts">
+          <div><dt id="detail-client-label">业务对象</dt><dd id="detail-client"></dd></div>
+          <div><dt>项目周期</dt><dd id="detail-period"></dd></div>
+          <div><dt>当前状态</dt><dd id="detail-stage"></dd></div>
+        </dl>
+
+        <div class="case-role">
+          <span>我的角色</span>
+          <p id="detail-role"></p>
+        </div>
+
+        <div class="case-actions">
+          <a class="case-primary-action" id="detail-demo-link" href="#" target="_blank" rel="noopener noreferrer">体验脱敏 Demo ↗</a>
+          <button class="case-secondary-action case-ai-action js-ai-open" type="button" data-context="projects">
+            <span class="case-ai-action-icon" aria-hidden="true">↗</span>
+            <span>向 AI 询问此项目</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="case-media" aria-label="项目产品物料">
+        <div class="case-media-head">
+          <div>
+            <span>PROJECT SHOWCASE</span>
+            <strong id="detail-media-title">项目 / 项目展示</strong>
+          </div>
+          <div class="case-media-controls" id="detail-media-switch" aria-label="选择项目资料" hidden></div>
+          <div class="case-viewer-tools">
+            <div class="case-zoom-controls" role="group" aria-label="缩放项目页面">
+              <button id="detail-zoom-out" type="button" aria-label="缩小">−</button>
+              <button id="detail-zoom-reset" type="button" aria-label="恢复默认比例"><span id="detail-zoom-value">100%</span></button>
+              <button id="detail-zoom-in" type="button" aria-label="放大">＋</button>
+            </div>
+            <div class="case-page-controls" role="group" aria-label="切换项目页面">
+              <button id="detail-page-prev" type="button" aria-label="上一页">←</button>
+              <span class="case-poster-page" id="detail-poster-page">01 / 02</span>
+              <button id="detail-page-next" type="button" aria-label="下一页">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="case-poster-stage" id="case-poster-stage" tabindex="0" aria-label="项目页面查看器">
+          <div class="case-poster-canvas" id="detail-poster-canvas">
+            <img id="detail-poster" src="" alt="" />
+            <iframe id="detail-pdf" title="项目 PDF 页面" hidden></iframe>
+          </div>
+          <div class="case-media-empty" id="detail-media-empty" hidden>
+            <span>PROJECT MATERIALS</span>
+            <p>项目展示</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="ai-panel" aria-hidden="true" aria-labelledby="ai-panel-title">
+      <button class="ai-backdrop js-ai-close" type="button" aria-label="关闭 AI 面板"></button>
+      <div class="ai-sheet" role="dialog" aria-modal="true">
+        <div class="ai-sheet-header">
+          <div><span class="ai-mark">AI</span><p id="ai-panel-title">关于当前项目</p></div>
+          <button class="ai-close js-ai-close" type="button">关闭</button>
+        </div>
+        <div class="ai-context">
+          <p>你正在查看</p>
+          <h2 id="ai-context-title">项目内容</h2>
+          <p id="ai-context-summary">了解项目背景、方案与个人贡献。</p>
+        </div>
+        <div class="ai-chat-log" id="ai-chat-log" aria-live="polite" hidden></div>
+        <div class="ai-composer">
+          <div class="ai-followups-host" id="ai-followups-host" aria-live="polite" hidden></div>
+          <form class="ai-form" id="ai-form">
+            <div><input id="ai-input" type="text" placeholder="输入你的问题" aria-label="输入你的问题" /><button type="submit">发送</button></div>
+          </form>
+        </div>
+      </div>
+    </aside>
+    <script src="detail.js"></script>
+    <script src="app.js?v=20260814-2"></script>
+  </body>
+</html>

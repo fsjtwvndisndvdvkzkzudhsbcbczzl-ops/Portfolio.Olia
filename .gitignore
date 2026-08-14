@@ -1,0 +1,9 @@
+# Detailed project sources may contain internal business information.
+data/projects/.private-source/
+
+# Local review artifacts.
+tmp/
+.DS_Store
+
+# Local Dora credentials. Never publish or commit this file.
+.agents/.env

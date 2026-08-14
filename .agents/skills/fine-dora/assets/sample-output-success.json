@@ -1,0 +1,45 @@
+{
+  "success": true,
+  "action": "chat",
+  "mode": "full",
+  "data": {
+    "externalSessionKey": "fine-dora-session-1",
+    "queryId": "query-1",
+    "status": "SUCCESS",
+    "content": "Sales revenue grew 18% year over year, mainly driven by the East region.",
+    "messages": [
+      {
+        "type": "STEP",
+        "status": "PROCESSING",
+        "content": "Collecting the latest sales metrics from Dora."
+      },
+      {
+        "type": "RESULT",
+        "status": "SUCCESS",
+        "content": "Sales revenue grew 18% year over year, mainly driven by the East region."
+      }
+    ],
+    "displayText": "Sales revenue grew 18% year over year, mainly driven by the East region.",
+    "messageSummaries": [
+      {
+        "type": "STEP",
+        "status": "PROCESSING",
+        "content": "Collecting the latest sales metrics from Dora."
+      },
+      {
+        "type": "RESULT",
+        "status": "SUCCESS",
+        "content": "Sales revenue grew 18% year over year, mainly driven by the East region."
+      }
+    ]
+  },
+  "error": null,
+  "meta": {
+    "action": "chat",
+    "published_agent_id": "agent-1",
+    "channel_type": "feishu",
+    "externalSessionKey": "fine-dora-session-1",
+    "queryId": "query-1",
+    "status": "SUCCESS"
+  }
+}
